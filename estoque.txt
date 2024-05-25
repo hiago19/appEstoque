@@ -1,0 +1,4 @@
+Gênero: masculina | Time: Flamengo | Quantidade: 2
+Gênero: masculina | Time: Grêmio | Quantidade: 5
+Gênero: feminina | Time: Internacional | Quantidade: 10
+Gênero: masculina | Time: Real Madrid | Quantidade: 20
