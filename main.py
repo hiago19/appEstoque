@@ -2,6 +2,7 @@ from time import sleep
 
 LINE = '-' * 50
 DELAY_TIMES = [1, 2]
+MAX_ATTEMPTS = 3
 
 
 def mostrar_linhas():
@@ -46,7 +47,8 @@ def cadastro():
 
 
 def login():
-    while True:
+    tentativas = 0
+    while tentativas < MAX_ATTEMPTS:
         username = input("Entre com seu nome de usuário: ")
         password = input("Coloque sua senha: ")
 
@@ -56,8 +58,11 @@ def login():
                 print("\n Bem vindo!\n")
                 menu()
             else:
-                print("\nCredenciais erradas!")
-            break
+                tentativas += 1
+                print(f"\nCredenciais erradas! Tentativas restantes: {MAX_ATTEMPTS - tentativas}")
+    print("Número máximo de tentativas excedido. Saindo...")
+    delay()
+    exit()
 
 
 def ver_produtos():
