@@ -155,7 +155,7 @@ def menu():
 
 # PAGINA INICIAL
 mostrar_linhas()
-print(' PAGINA INICIAL')
+print('PAGINA INICIAL'.center(50))
 mostrar_linhas()
 
 inicio = input('Você é um usuário cadastrado? sim ou não: ').lower()
